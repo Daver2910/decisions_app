@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway|Roboto+Condensed");
+
+
+body{
+	font-family: Raleway;
+}
+
+#back, #next {
+	margin-top: -10vh;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	display: block;
+	z-index: 2;
+}
+#back{
+	float: left;
+}
+#next{
+	float: right;
+}
+
+#mainPage{
+	position: absolute;
+	background: url('images/woodDeckBG.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 100vh;
+	text-align: center;
+
+}
+#span{
+	margin-top: 25vh;
+	background-color: rgba(0,0,0, 0.7);
+	margin-right: 20vw;
+	margin-left: 20vw;
+	padding-right: 20px;
+	padding-left: 20px;
+  	padding-top: 10px;
+  	padding-bottom: 20px;
+}
+
+#span h1{
+	color: #0ae7ec;
+	font-size: 90px;
+}
+
+#span p{
+	color: #0ae7ec;
+	font-size: 20px;
+}
+
+#startBtn {
+	margin-top: 5vh;
+	padding-right: 25px;
+	padding-left: 25px;
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+	background-color: #0ae7ec;
+	border-radius: 0px;
+}
+/**************************            INTRO                  ***********************************************/
+
+#intro{
+	display: none;
+	min-height: 100vh;
+	max-height: 100vh;
+	text-align: center;
+}
+#span1{
+	margin-top: 25vh;
+	background-color: rgba(0,0,0, 0.7);
+	margin-right: 1vw;
+	margin-left: 1vw;
+	padding-right: 20px;
+	padding-left: 20px;
+  	padding-top: 10px;
+  	padding-bottom: 20px;
+  	
+  	
+}
+
+#span1 h3{
+	color: #0ae7ec;
+	font-size: 90px;
+}
+
+#span1 p{
+	color: #0ae7ec;
+	font-size: 20px;
+}
+
+
+/****************************           Form                 ***********************************************/
+#qForm {
+	display: none;
+}
+
+#goHomeBtn{
+	display: none;
+}
+
+.canvas {
+	padding: 20px;
+	background-color: red;
+}
+
+#canvas {
+	max-height: 600px;
+	max-width: 600px;
+	display: flex;
+	background-color: yellow;
+	float: right;

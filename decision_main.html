@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Decision Maker</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="decision.css">
+
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12" id="mainPage">
+			<div id="span">
+				<p class="">welcome</p>
+				<h1 class="text-uppercase">Decision maker</h1>
+				<p class="text-lowercase">Do you have a dilema you cannot decide upon? <br>Our decision maker will help you to factor all the options</p>
+				<button class="btn text-lowercase" id="startBtn" onclick="startGame()">START</button>
+			</div>
+		</div>
+		<div id="intro" class="col-md-12"><div class="row">
+			<div id="span1" class="col-md-7 col-lg-7">
+				<h3>Introduction</h3>
+				<p>Decision-making is a complex process of defining and choosing based on the values and preferences of the decision-maker. This tool will help you to verbalise the alternatives, clarify your priorities and make a final choice between two or more options. Each criteria influencing your choice will be valuated by you which makes the result reflect your personal beliefs and preferences. You will see that all the decisions we make, even emotional ones only seems irrational, when in the reality they are composed of several rational components impacting your choice.</p>
+			</div>
+			<div class="canvas col-lg-5 col-md-5">
+				<canvas id='canvas'></canvas>
+			</div></div>
+		</div>
+		<div id="qForm">
+			<h3>Asking the Question</h3>
+			<p>Please ask the question containing two or more options. The tool is not suppose to reply yes or no questions. For example: a.) Should I move to USA or stay in Poland? b.) Should I propose to Veronica or wait? 3.) Should I buy a car or use public transport?</p>		
+			<div>
+				<form action="" target="_blank">
+					<label for="problem">Problem Description</label><br>
+					<input type="text" name="problem" placeholder="What is the problem?"><br>
+					<label for="F01">Factor 01</label><br>
+					<input type="text" name="F01" placeholder="Pros and Cons"><br>
+					<input type="submit" id="submit" class="btn btn-warning">
+				</form>
+			</div>
+		</div>
+	</div>
+<button class="btn btn-danger" onclick="goBack()" id="back">Back</button>
+<button class="btn btn-success" onclick="goForward()" id="next">Next</button>
+</div>
+
+<script type="text/javascript" src="decision.js"></script>
+<script type="text/javascript" src="motion.s"></script>
+</body>
+</html>
